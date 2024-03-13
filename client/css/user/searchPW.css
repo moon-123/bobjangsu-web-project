@@ -1,0 +1,23 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+#searchPW .main .page-name { margin-top: 4rem; width: 100%; display: flex; justify-content: center; font-size: 4rem; }
+
+
+#searchPW .form-group {
+    flex-wrap: wrap;
+}
+
+#searchPW .main-btn { margin-top: 2rem; margin-bottom: 6rem;}
+
+/*
+    재원이 login 작성 끝
+*/
+
+/* #searchPW .change-password-container {  } */
+#searchPW form { width: 100%; }
+#searchPW label { flex-basis: 30%; font-size: 3rem;}
+#searchPW .change-password-container { width: 100%; margin: 0 auto;}
+#searchPW .btn-wrap { margin: 0 auto; }
+
+#searchPW input { width: 30%; font-size: 2.5rem;}

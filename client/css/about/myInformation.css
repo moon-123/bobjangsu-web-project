@@ -1,0 +1,20 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+
+
+/* 메뉴 */
+/* li를 정렬하기 위해 flex, space-between, 각 버튼 간격 14px */
+#myInfo .main .main-wrap { width: 100%; height: 100%; margin-bottom: 1.5rem; padding-top: 10rem;}
+
+/* 버튼 사이 간격 0.4rem 유지하는 calc, 0.775:1 비율 유지 */
+#myInfo .main .main-wrap li {display: block; width: 100%; aspect-ratio: 6.48 / 1; background-color: rgb(255, 255, 255); border-radius: 10px; margin-bottom: 20px; font-size: 4rem; }
+
+#myInfo .main .main-wrap li a { display: flex; justify-content: center;}
+
+#myInfo .main .alarm { width: 100%; display: flex; justify-content: space-between; align-items: center; font-size: 4rem; margin-top: 20px;}
+
+#myInfo .main .alarm-text { font-size: 3.2rem;}
+
+#myInfo .main .alarm .main-btn { width: 10rem; aspect-ratio: 6.48 / 1; }
+

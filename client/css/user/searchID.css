@@ -1,0 +1,19 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+#searchID .main .page-name { margin-top: 4rem; width: 100%; display: flex; justify-content: center; font-size: 4rem; }
+
+
+#searchID .phone-number {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+#searchID .btn-wrap { margin-bottom: 1rem;}
+
+#searchID input {   
+  width: 70%;
+  font-size: 2.5rem;
+  padding: 1rem; 
+}

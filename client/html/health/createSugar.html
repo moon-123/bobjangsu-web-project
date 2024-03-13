@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혈당</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/health/dataTable.css">
+    <link rel="stylesheet" type="text/css" href="../../css/health/time.css">
+    <link rel="stylesheet" type="text/css" href="../../css/health/createSugar.css">
+    <script defer src="../../js/index.js"></script>
+    <script src="../../js/main/sub.js"></script>
+
+</head>
+<body id="index">
+    <div class="wrap">
+        <div class="noma">
+            <header class="header">
+                <div class="header-btn">
+                    <button type="button" class="plus" id="plus">더보기</button>
+                </div>
+                <div class="header-logo">
+                    <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                </div>
+            </header>
+            <div class="main">
+                <div class="main-text" style="margin: 0 auto;">혈당</div>
+
+                <div id="date" class="date">
+                    <div class="calendar-wrap">
+                        <div class="calendar-middle-wrap" id="calendar">
+                            <div class="cal_nav">
+                                <a href="javascript:;" class="nav-btn go-prev"></a>
+                                <span class="year-month start-year-month"></span>
+                                <a href="javascript:;" class="nav-btn go-next"></a>
+                            </div>
+                            <div class="cal_wrap">
+                                <div class="days">
+                                    <div class="day">일</div>
+                                    <div class="day">월</div>
+                                    <div class="day">화</div>
+                                    <div class="day">수</div>
+                                    <div class="day">목</div>
+                                    <div class="day">금</div>
+                                    <div class="day">토</div>
+                                </div>
+                                <div class="dates start-calendar"></div>
+                            </div>
+                            <div>
+                                <button onclick="hideIt()" id="okay">확인</button>
+                            </div>
+                        </div>
+                        <div class="date-wrap" id="date-wrap">
+                            <div class="dateTitle">날짜</div>
+                            <div class="test">
+                                <div class="checkInOutInfo" id="dateData" onclick="toggleCalendar()">
+                                    <!-- <span>선택한 날짜</span> -->
+                                    <label id="check_in_day"></label>
+                                </div>
+                                <div class="dateInput2">
+                                    <div class="info">* 클릭시 날짜 변경 가능합니다!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataInput">
+                    <div class="dataInputBox">
+                        <div class="dataInputName">시간</div>
+                        <div class="time-wrap" id="time-wrap">
+                            <div id="timeClick" style="display: flex;" class="data">
+                                <label id="hh"></label>
+                                :
+                                <label id="mm"></label>
+                            </div>
+                            <div class="dateInput2">
+                                <div class="info">* 클릭시 시간 변경 가능합니다!</div>
+                            </div>
+
+                            <div id="timeTable">
+                                <div id="hours"></div>
+                                <div id="mins"></div>
+                                <button type="button" id="timeCheck" class="timeCheck">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataInput2">
+                    <div class="dataInputBox2">
+                        <div class="dataInputName2">혈당</div>
+                        <div class="data2Box">
+                            <input type="text" placeholder="혈당값" id="sugarData" class="data2">
+                            <div class="unit">mg/dL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notice">
+                    <div class="noticePad" id="low">0~70: 저혈당</div>
+                    <div class="noticePad" id="normal">70~100: 정상</div>
+                    <div class="noticePad" id="dangerous">100~125: 당뇨 전단계</div>
+                    <div class="noticePad" id="VerDanger">125이상: 당뇨병</div>
+                    <div class="noticePad"></div>
+                </div>
+                <div id="notepad" class="notepad">
+                    <textarea placeholder="이곳을 눌러 메모를 입력하세요" id="content" class="content"></textarea>
+                </div>
+                <div class="btn">
+                    <a href="#">
+                        <div class="main-btn" id="savebtn">저장</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="./createChoose.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+        <div class="side-bar">
+            <div class="side-bg" onclick="closeSidebar()"></div>
+            <div class="inner-side">
+                <div class="header">
+                    <button type="button" class="close">
+                        닫기
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" onclick="changePage()">
+                            <p id="myname"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/about/myinformation.html" id="mypageButton">
+                            <div class="nm">
+                                <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="mealButton" onclick="fetchMealData()">
+                            <div class="nm">
+                                <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/recipe/recipe.html" id="recipeButton">
+                            <div class="nm">
+                                <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/ingredient/choose.html" id="ingredientBt">
+                            <div class="nm">
+                                <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/health/startChoose.html" id="healthButton">
+                            <div class="nm">
+                                <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <p>로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/health/createSugar.js"></script>
+</body>
+</html>

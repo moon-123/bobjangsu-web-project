@@ -1,0 +1,120 @@
+<!-- 완료 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밥장수 아이디 찾기</title>
+    <link rel="stylesheet" href="../../css/user/searchID.css">
+    <script defer src="../../js/index.js"></script>
+</head>
+
+<body id="searchID">
+    <div class="wrap">
+        <div class="noma">
+            <!-- main 로고헤더 -->
+            <header class="header">
+                <div class="header-btn">
+                    <button type="button" class="plus">더보기</button>
+                </div>
+
+                <div class="header-logo">
+                    <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                </div>
+            </header>
+
+            <!-- 메인 -->
+            <div class="main">
+                <div class="page-name">
+                    <h2>아이디 찾기</h2>
+                </div>
+
+                <form id="searchID-form" method="#">
+                    <div class="form-group">
+                        <label for="username">이름</label>
+                        <input type="text" id="username" name="username" maxlength="10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phnumber">휴대폰<br> &nbsp;번호</label>
+                        <input type="text" id="phnumber" name="phnumber" required>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <button type="submit" class="main-btn"><span class="main-text">아이디 찾기</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="#" class="footer-btn" onclick="history.back()">
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+
+        <div class="side-bar">
+            <div class="side-bg" onclick="closeSidebar()"></div>
+            <div class="inner-side">
+                <div class="header">
+                    <button type="button" class="close">
+                        닫기
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" onclick="changePage()">
+                            <p id="myname"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/about/myinformation.html" id="mypageButton">
+                            <div class="nm">
+                                <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/meal/meal.html" id="mealButton">
+                            <div class="nm">
+                                <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/recipe/recipe.html">
+                            <div class="nm">
+                                <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/ingredient/choose.html">
+                            <div class="nm">
+                                <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/health/startChoose.html" id="healthButton">
+                            <div class="nm">
+                                <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <p>로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/user/searchID.js"></script>
+</body>
+
+</html>

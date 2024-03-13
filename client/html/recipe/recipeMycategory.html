@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 상세</title>
+    <link rel="stylesheet" type="text/css" href="../../css/recipe/recipe.css">
+    <script defer src="../../js/index.js"></script>
+    <script src="../../js/main/sub.js"></script>
+
+</head>
+
+<body id="recipeDetail">
+    <div class="wrap">
+        <div class="noma">
+            <!-- main 로고헤더 -->
+            <header class="header">
+                <div class="header-btn">
+                    <button type="button" class="plus">더보기</button>
+                </div>
+
+                <div class="header-logo">
+                    <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                </div>
+            </header>
+            <main class="main">
+                <div class="main-wrap">
+                    <div class="search">
+                        <form action="#" method="GET" class="form">
+                            <input type="text" placeholder="음식 이름을 검색해보세요" id="searchInput" class="searchInput">
+                            <button type="submit" class="sub-btn">레시피 검색</button>
+                        </form>
+                    </div>
+                    <p class="info">이름을 누르면 상세정보를 볼 수 있습니다.</p>
+                    <div class="list">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="./recipeMy.html" class="footer-btn" >
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+        <div class="side-bar">
+            <div class="side-bg" onclick="closeSidebar()"></div>
+            <div class="inner-side">
+                <div class="header">
+                    <button type="button" class="close">
+                        닫기
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" onclick="changePage()">
+                            <p id="myname"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/about/myinformation.html" id="mypageButton">
+                            <div class="nm">
+                                <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="mealButton" onclick="fetchMealData()">
+                            <div class="nm">
+                                <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/recipe/recipe.html" id="recipeButton">
+                            <div class="nm">
+                                <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/ingredient/choose.html" id="ingredientBt">
+                            <div class="nm">
+                                <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/health/startChoose.html" id="healthButton">
+                            <div class="nm">
+                                <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <p>로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/recipe/recipeMycategory.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+#login .main .page-name { margin-top: 4rem; width: 100%; display: flex; justify-content: center; font-size: 4rem; }
+
+/* 메뉴 */
+/* li를 정렬하기 위해 flex, space-between, 각 버튼 간격 14px */
+#login .main ul { width: 100%; margin-bottom: 4rem; }
+#login .main ul + ul + ul { display: flex;}
+/* #login .main ul + ul + ul .main-text { font-size: 2rem;} */
+#login .main ul + ul + ul li:nth-child(1) { margin-right: 1rem; }
+#login .main .main-text { padding: 1rem;}
+
+#login input {   
+    width: 70%;
+    font-size: 2.5rem;
+    padding: 1rem; 
+  }

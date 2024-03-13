@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myInformationChange</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/about/myInformationChange.css">
+    <!-- js -->
+    <script defer src="../../js/myInformationChange.js"></script>
+    <script defer src="../../js/index.js"></script>
+    <script src="../../js/main/sub.js"></script>
+    
+
+
+</head>
+
+<body id="myInfo">
+    <div class="wrap">
+        <div class="noma">
+            <!-- main 로고헤더 -->
+            <header class="header">
+                <div class="header-btn">
+                    <button type="button" class="plus">더보기</button>
+                </div>
+
+                <div class="header-logo">
+                    <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                </div>
+            </header>
+
+            <main class="main">
+
+                <ul class="main-wrap">
+                    <li>
+                        <div class="a" id="heightbox">
+                            <!-- js에서 파일 소환 -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a" id="weightbox">
+                            <!-- js에서 파일 소환 -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a" id="energybox">
+                            <!-- js에서 파일 소환 -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="b">
+                            <p>
+                                1. 거의 운동하지 않음<br>
+                                2. 주 1~3일 가벼운 운동<br>
+                                3. 주 3~5일 중간 강도 운동<br>
+                                4. 주 6~7일 격렬한 운동<br>
+                                5. 매우 격렬한 운동 및 육체노동
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a">
+                            <p>현재 나의 알레르기</p>
+                        </div>
+                        <div class="a">
+                            <span id="allergy"></span>
+                        </div>    
+                        <div class="b" id="Allergy">
+                            <p>변경할 알레르기를 새로 입력해주세요</p><br>
+                            <div>
+                                <input type="checkbox" name="allergy" id="allergy1" value="땅콩">땅콩
+                                <input type="checkbox" name="allergy" id="allergy2" value="견과">견과
+                                <input type="checkbox" name="allergy" id="allergy3" value="갑각류">갑각류
+                                <input type="checkbox" name="allergy" id="allergy4" value="계란">계란
+                            </div>
+                            <div>
+                                <input type="checkbox" name="allergy" id="allergy5" value="밀">밀
+                                <input type="checkbox" name="allergy" id="allergy6" value="생선">생선
+                                <input type="checkbox" name="allergy" id="allergy7" value="우유">우유
+                                <input type="checkbox" name="allergy" id="allergy8" value="조개">조개
+                            </div>
+                            <div>
+                                <input type="checkbox" name="allergy" id="allergy9" value="콩">콩
+                                <input type="checkbox" name="allergy" id="allergy10" value="호두">호두
+                                <input type="checkbox" name="allergy" id="allergy11" value="잣">잣
+                                <input type="checkbox" name="allergy" id="allergy12" value="복숭아">복숭아
+                            </div>
+                            <div class="a">
+                                <div class="c">
+                                    <label for="allergy13">기타</label>
+                                </div>
+                                <input type="text" placeholder="직접 입력 해주세요" id="allergy13">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="infochange" id="infochange">
+                    <a href="#"><button type="button" class="main-btn"><span class="main-text">나의 정보
+                                수정하기</span></button></a>
+                </div>
+            </main>
+
+        </div>
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="../about/myInformationCheck.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+
+        <div class="side-bar">
+            <div class="side-bg" onclick="closeSidebar()"></div>
+            <div class="inner-side">
+                <div class="header">
+                    <button type="button" class="close">
+                        닫기
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" onclick="changePage()">
+                            <p id="myname"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/about/myinformation.html" id="mypageButton">
+                            <div class="nm">
+                                <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="mealButton" onclick="fetchMealData()">
+                            <div class="nm">
+                                <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/recipe/recipe.html" id="recipeButton">
+                            <div class="nm">
+                                <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/ingredient/choose.html" id="ingredientBt">
+                            <div class="nm">
+                                <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/health/startChoose.html" id="healthButton">
+                            <div class="nm">
+                                <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <p>로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

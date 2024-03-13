@@ -1,0 +1,78 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+
+/* 메인 버튼 감싸는 wrapper, 버튼 정렬 위헤서 flex(사실상 의미 없음 자식이 ul이라), wrap */
+/* 좌우 padding 18px 유지 */
+/* #index .main {padding: 1rem 1.125rem 15rem; box-sizing: border-box;} */
+
+/* 달력 부분  */
+/* width: 99px; height: 60px; */
+/* width: 211px; height: 60px; */
+#index .wrap .main .date { width: 100%;}
+#index .wrap .main .date .calendar-wrap .calendar-middle-wrap {width: 100%;}
+#index .wrap .main .date .calendar-wrap .date-wrap {display: flex;align-items: center; justify-content: space-between; padding: 0.7305rem;}
+
+#index .wrap .main .date .calendar-wrap .date-wrap .dateTitle {border: 1px solid var(--point-color);border-radius: 10px; display: flex; align-items: center; justify-content: center; width: calc(30% - 0.9rem);aspect-ratio: 1 / 0.6;background-color: white; font-size: 3rem;}
+
+/* 확인 버튼 크게 늘리기 */
+#index #calendar {
+    text-align: center;
+}
+
+#index #okay {
+    font-size: 3rem; /* Adjust the font size as needed */
+    padding: 1rem 2rem; /* Adjust padding for height and width */
+    background-color: var(--point-color); /* Set the background color */
+    color: white; /* Set the text color */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+#index #okay:hover {
+    background-color: #b24400; /* Change the background color on hover */
+}
+
+#index .wrap .main .date .calendar-wrap .date-wrap .test {width: calc(70% - 0.9rem);aspect-ratio: 1 / 0.1; margin-top: 2.7rem;}
+
+#index .wrap .main .date .calendar-wrap .date-wrap .test .checkInOutInfo {width: 100%;aspect-ratio: 1 / 0.247; border: 1px solid var(--point-color);border-radius: 10px;background-color: white; font-size: 2.5rem;}
+
+#index .wrap .main .dataInput { width: 100%;display: flex;align-items: center; justify-content: space-between;}
+
+#index .wrap .main .dataInput .dataInputBox { width: 100%; display: flex; align-items: center; justify-content: space-between;padding: 0.7305rem ;} 
+
+#index .wrap .main .dataInput .dataInputBox .dataInputName { width: calc(29% - 0.9rem);aspect-ratio: 1 / 0.6;background-color: white; font-size: 3rem; border: 1px solid var(--point-color);border-radius: 10px; display: flex; align-items: center; justify-content: center;}
+
+#index .wrap .main .dataInput .dataInputBox .data{width: calc(70% - 0.9rem);aspect-ratio: 1 / 0.247;background-color: white; font-family: 'KCCChassam'; font-size: 3rem; border: 1px solid var(--point-color);border-radius: 10px; display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 2.5rem;} 
+
+#index .wrap .main .dataInput2 { width: 100%;display: flex;align-items: center; justify-content: space-between;}
+#index .wrap .main .dataInput2 .dataInputBox2 { width: 100%; display: flex; align-items: center; justify-content: space-between;padding: 0.7305rem ; margin: 2rem 0 -0.5rem;} 
+#index .wrap .main .dataInput2 .dataInputBox2 .dataInputName2 { width: calc(29% - 0.9rem);aspect-ratio: 1 / 0.6;background-color: white; font-size: 3rem; border: 1px solid var(--point-color);border-radius: 10px; display: flex; align-items: center; justify-content: center;}
+#index .wrap .main .dataInput2 .dataInputBox2 .data2Box{width: calc(70% - 0.9rem);aspect-ratio: 1 / 0.247;background-color: white; font-family: 'KCCChassam'; font-size: 3rem; border: 1px solid var(--point-color);border-radius: 10px; display: flex; align-items: center; justify-content: center; text-align: center;margin-left: 2rem;box-sizing: border-box;} 
+#index .wrap .main .dataInput2 .dataInputBox2 .data2Box .data2 {all: initial;}
+#index .wrap .main .dataInput2 .dataInputBox2 .data2Box .data2 { font-size: 2.5rem; display: flex; align-items: center; justify-content: space-between;width: 50%;font-family: "KCCChassam";text-align: center;}
+
+#index .wrap .main .notepad { width: 100%; height: 100%;padding: 0.7305rem;}
+#index .wrap .main .notepad .content {width: 100%; aspect-ratio: 1 / 0.6; border: 1px solid var(--point-color);border-radius: 10px;background-color: white; margin-top: 3rem; font-family: 'KCCChassam'; box-sizing: border-box; line-height: 2; font-size: 3rem; padding: 2rem;}
+
+#index .wrap .main .btn { font-size: 3rem; margin: 3rem auto; width: 50%; }
+#index .wrap .main .btn .main-btn { background-color: var(--point-color); color: white; aspect-ratio: 1 / 0.25;}
+
+
+.time-wrap{width: calc(70% - 0.9rem); position: relative; left: 0; top: 0;}
+.time-wrap #timeTable{position: absolute; width: 100%; background: #fff; padding: 10px; border-radius: 10px; border: 1px solid var(--point-color); display: none; flex-wrap: wrap;}
+#timeClick{width: 100% !important;}
+.time-wrap #timeTable.on{display: flex;}
+#timeCheck{width: 100%; padding: 20px; font-size: 25px; margin-top: 20px; box-sizing: border-box; border-radius: 5px; background-color: var(--point-color); color: #fff;}
+
+.info {font-size: 15px;color: red; margin-top: 1rem; display: flex; justify-content: center; align-items: center;}
+
+.notice { display: flex; flex-wrap: wrap; font-size: 2rem; margin: 0.7rem auto;}
+#highInfo div{ margin-left: 1rem;}
+#lowInfo div { margin-left: 2rem;}
+
+#lowLow, #highLow {color: blue;}
+#lowNormal, #highNormal {color:  rgb(20, 172, 20);}
+#lowHigh, #highHigh {color: red;}

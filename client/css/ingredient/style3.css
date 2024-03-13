@@ -1,0 +1,53 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+#main-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#detail #name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  list-style: none;
+}
+
+
+#detail #list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#list > div {
+  width: 80%;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#list img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#list li {
+  font-size: 2rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+#list p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--point-color);
+}

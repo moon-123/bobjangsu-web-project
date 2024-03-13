@@ -1,0 +1,257 @@
+<!-- 완료 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밥장수 회원가입</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../../js/user/date.js"></script>
+
+    <link rel="stylesheet" href="../../css/user/regist.css">
+    <link rel="stylesheet" type="text/css" href="../../css/health/createBlood.css">
+    <link rel="stylesheet" type="text/css" href="../../css/health/dataTable.css">
+
+
+</head>
+
+<body id="regist">
+    <div class="wrap">
+        <div class="noma">
+            <!-- main 로고헤더 -->
+            <header class="header">
+                <div class="header-btn">
+                    <button type="button" class="plus" id="display">더보기</button>
+                </div>
+
+                <div class="header-logo">
+                    <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                </div>
+            </header>
+
+            <div class="main">
+                <div id="title">
+                    <h2>회원가입</h2>
+                </div>
+                <form id="registForm" method="#">
+
+                    <div class="form-group">
+                        <label for="userid">아이디</label>
+                        <input type="text" id="userid" name="userid" maxlength="20" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userpassword">비밀번호</label>
+                        <input type="password" id="userpassword" name="userpassword" maxlength="4" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkuserpassword">비밀번호<br>재입력</label>
+                        <input type="password" id="checkuserpassword" name="checkuserpassword" maxlength="4" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">이름</label>
+                        <input type="text" id="username" name="username" maxlength="10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="gender-selection">
+                            <label>성별</label>
+
+                            <div class="radio-wrap">
+                                <div>
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male" class="gender-btn">남자</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="female" name="gender" value="female" required>
+                                    <label for="female" class="gender-btn">여자</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="birthday-selection">
+                            <label>생년월일</label>
+
+                            <div class="radio-wrap">
+                                <div>
+                                    <input type="radio" id="solar" name="birthday_type" value="solar" required>
+                                    <label for="solar" class="birthday-btn">양력</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="lunar" name="birthday_type" value="lunar" required>
+                                    <label for="lunar" class="birthday-btn">음력</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            setDateBox();
+                        });
+                        function setDateBox() {
+                            var dt = new Date();
+                            var year = dt.getFullYear();
+
+                            $("#year").append("<option value=''>년도</option>");
+                            for (var y = 1940; y <= (year); y++) {
+                                $("#year").append("<option value='" + y + "'>" + y + " 년" + "</option>");
+                            }
+
+                            $("#month").append("<option value=''>월</option>");
+                            for (var i = 1; i <= 12; i++) {
+                                if (String(i).length == '1') {
+                                    $("#month").append("<option value='" + "0" + i + "'>" + "0" + i + "월" + "</option>");
+                                } else {
+                                    $("#month").append("<option value='" + i + "'>" + i + "월" + "</option>");
+                                }
+                            }
+
+                            $("#day").append("<option value=''>일</option>");
+                            for (var i = 1; i <= 31; i++) {
+                                if (String(i).length == '1') {
+                                    $("#day").append("<option value='" + "0" + i + "'>" + "0" + i + "일" + "</option>");
+                                } else {
+                                    $("#day").append("<option value='" + i + "'>" + i + "일" + "</option>");
+                                }
+                            }
+                        }
+                    </script>
+                    <div class="form-group">
+                        
+                            <label></label>
+                            <div class="selectBox">
+                                <select class="form-control input-sm main-text" id="year" name="year">
+                                </select>
+                                <div class="daymonth">
+                                    <select class="form-control input-sm main-text" id="month" name="month">
+                                    </select>
+                                    <select class="form-control input-sm main-text" id="day" name="day">
+                                    </select>
+                                </div>
+                            </div>
+                    </div>
+
+
+                    <div id="hp" class="form-group withText">
+                        <label for="phnumber">휴대폰<br> &nbsp;번호</label>
+                        <input type="tel" id="phnumber" name="phnumber" placeholder="- 제외하고 숫자만 입력" required>
+
+                    </div>
+                    <div class="form-group">
+                        <div style="width: 100%;" class="anne">
+                            <p>가입을 위해 휴대폰번호 인증이 필요합니다.</p>
+                            <p>휴대폰 번호를 입력하고 인증번호 받기 버튼 클릭하세요.</p>
+                            <p>인증번호가 오지 않으면 고객센터(junyelim@naver.com)에 문의바랍니다.</p>
+                        </div>
+                    </div>
+                    
+                    <ul>
+                        <li>
+                            <button type="button" id="sendVerification" class="main-btn">
+                                <span class="main-text">인증번호받기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    
+
+                    <li id="checkMessage" style="text-align: center; margin: 0 0 4rem; display: none;">
+                        <span style="font-size: 3rem;">인증되었습니다!</span>
+                    </li>
+
+                    <div id="verificationSection" style="display: none;">
+                        <div class="form-group">
+                            <label for="verificationCode">인증번호</label>
+                            <input type="text" id="verificationCode" name="verificationCode" required>
+                            <span id="time" style="width: 30%; color: black; font-size: 40px;"></span>
+                        </div>
+                        <div class="form-group">
+                            <div style="width: 100%;" class="anne">
+                                <p>인증번호 문자메세지를 입력하고 인증하기 버튼을 누르세요.</p>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <button type="button" id="verifyCode" class="main-btn">
+                                    <span class="main-text">인증번호 검증</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            <button type="submit" class="main-btn" id="registBt">
+                                <span class="main-text">가입하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!-- 여기까지가 메인 -->
+        </div>
+        <!-- 여기부터 푸터 -->
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="#" class="footer-btn" onclick="history.back()">
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+
+        <!-- 여기부터가 사이드바 -->
+        <div class="side-bar">
+            <div class="header">
+                <button type="button" class="close">
+                    닫기
+                </button>
+            </div>
+            <ul>
+                <li>
+                    <a href="../../html/about/myinformation.html">
+                        <p>홍길동</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/about/myinformation.html">
+                        <p>내 정보</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/meal/meal.html">
+                        <p>식단</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/recipe/recipe.html">
+                        <p>요리책</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/ingredient/choose.html">
+                        <p>식재료</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/health/startChoose.html">
+                        <p>내 건강 등록</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>로그아웃</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../../js/user/regist.js"></script>
+
+</body>
+
+</html>

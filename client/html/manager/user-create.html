@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자 생성</title>
+    <link rel="stylesheet" href="../../css/manager/user-create.css">
+</head>
+<body>
+    <div class="container">
+        <h1>새 사용자 생성</h1>
+        <form id="createUserForm">
+            <div>
+                <label for="userid">아이디:</label>
+                <input type="text" id="userid" name="userid" maxlength="20" required>
+            </div>
+            <div>
+                <label for="userpassword">비밀번호:</label>
+                <input type="password" id="userpassword" name="userpassword" maxlength="4" required>
+            </div>
+            <div>
+                <label for="username">사용자 이름:</label>
+                <input type="text" id="username" name="username" maxlength="10" required>
+            </div>
+
+            <div class="radio-group">
+                <label>성별:</label>
+                <div>
+                    <div class="flex-wrap">
+                        <input type="radio" id="male" class="user-checkbox" name="gender" value="male" required>
+                        <label for="male">남성</label>
+                    </div>
+                    <div class="flex-wrap">
+                        <input type="radio" id="female" name="gender" class="user-checkbox" value="female" required>
+                        <label for="female">여성</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="radio-group">
+                <label>생년월일 유형:</label>
+                <div>
+                    <input type="radio" id="solar" name="birthdayType" class="user-checkbox" value="solar" required>
+                    <label for="solar">양력</label>
+                    <input type="radio" id="lunar" name="birthdayType" class="user-checkbox" value="lunar" required>
+                    <label for="lunar">음력</label>
+                </div>
+            </div>
+            
+            <div>
+                <label for="birthdayYear">생년월일:</label>
+                <input type="date" id="birthdayYear" name="birthdayYear" required> 
+            </div>
+            <div>
+                <label for="phonenumber">폰번호:</label>
+                <input type="text" id="phonenumber" name="phonenumber" maxlength="13" required>
+            </div>
+            <div class="btn-wrap">
+                <button type="submit" class="point-btn">생성</button>
+                <button type="button" id="backButton" class="black-btn">뒤로 가기</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../../js/manager/user-create.js"></script>
+</body>
+</html>

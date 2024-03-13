@@ -1,0 +1,103 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+/* 공통 */
+
+
+/* cal */
+/* 안내문 */
+#additional { display: block; }
+#additional .datament,
+#meal .datament { text-align: center; width: 100%; margin-top: 1rem;}
+
+#additional .datament p,
+#meal .datament p { font-size: 2rem; margin-bottom: 2rem; }
+
+#additional .datament br + p,
+#meal .datament br + p { font-size: 1.2rem; }
+
+#additional .menulist{ width: 100%; }
+
+#additional .first { flex-basis: 30%; font-size: 2.5rem; }
+#additional .second{ width: 70%; }
+
+#additional .basedata,
+#additional .energydata { display: flex; align-items: center; margin-top: 2rem;}
+
+#additional .text { border-radius: 20px; border: 1px solid var(--point-color); text-align: center; width: 95%; font-size: 2.5rem; font-family: 'KCCChassam';}
+
+#additional .unit { width: 10%; font-size: 2rem; }
+
+/* 알러지 */
+#additional .allergylist { display: flex; font-size: 1.8rem; align-items: start; margin-top: 2rem; }
+#additional .allergylist li { display: inline-block; margin: 0rem 0.2rem 1rem;}
+#additional .allergylist #allergy13 { height: 0.1rem; width: 20rem; font-size: 1.5rem; font-family: 'KCCChassam';}
+
+/* 에너지 */
+#additional .energydata input { width: 85%; height: 20px;}
+#additional .energydata .list { width: 85%; font-size: 1.8rem; border: 1px solid #F27521; border-radius: 20px; padding: 1rem; margin-bottom: 2rem; background-color: #FFF;}
+
+/* 레시피보기 버튼 */
+#additional .recipe-btn { width: 100%; }
+#additional .recipe-btn span {font-size: 3rem;}
+
+/* meal */
+#meal .text { margin: 0 auto; font-size: 3rem;}
+#meal .menulist{ width: 100%; border: var(--point-color) solid 3px; border-radius: 10px; background-color: white; }
+
+#meal .menu { font-size: 3rem; padding: 1.8rem 2.5rem; }
+#meal .menu-text { font-size: 2.2rem; padding: 2rem 2.5rem; color: var(--point-color); width: 100%; background-color: rgb(255, 241, 225); }
+#meal .menu-text:nth-child(1) { border-radius: 10px 10px 0px 0px;}
+
+
+#meal .per {
+    width: 100%;
+    background: #e5eaee;
+    height: 3rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#meal .base {
+    position: absolute;
+    left : 0;
+    background-color: black;
+    width: 0%;
+    height: 100%;
+}
+
+#meal .per span {
+    position: absolute;
+    left: 0;
+    background-color: #fdac17;
+    width: 0%;
+    height: 100%;
+    transition: all 0.2s;
+}
+
+#meal .txt { font-size: 2.5rem; margin-top: 2.2rem; margin-bottom: 0.7rem;}
+
+/* 레시피보기 */
+#meal .recipe-btn { width: 70%; margin: 2rem auto; }
+
+#meal .title { width: 100%; display: flex; justify-content: space-between; margin: 2rem;}
+
+#meal .title .semi-title { width: 30%; }
+#meal .title .semi-title button.on { background-color: #FF8A00;}
+#meal .title .semi-title button.on span {color: #fff;}
+
+#meal .title + p { font-size: 2.5rem; margin: 2rem auto; }
+
+#meal #loading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#meal #loading img {
+    margin: 0 auto;
+}
+

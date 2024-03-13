@@ -1,0 +1,42 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+/* #index .main {padding: 1rem 1.125rem 15rem; box-sizing: border-box;} */
+
+#index .wrap .main .date { width: 100%;}
+#index .wrap .main .date .calendar-wrap {border: 1px solid var(--point-color);border-radius: 10px;background-color: white; padding: 5%;}
+#index .wrap .main .date .calendar-wrap .dateCheckBtnBox { width: 100%;}
+#index .wrap .main .date .calendar-wrap .dateCheckBtnBox .dateCheckBtn {width: 100%; aspect-ratio: 1 / 0.1; background-color: #F27521;color: #FFF;font-size: 3rem;}
+
+#index .wrap .main .date .calendar-wrap .dateCheckBtnBox .dateCheckBtn:active {
+    background-color:#FFF; 
+    color:  #F27521;
+}
+
+#index .main .btnBox {width: 100%;display: flex;justify-content: space-around;}
+#index .main .btnBox .btn1 {border: 1px solid var(--point-color);border-radius: 10px;width: 15rem; aspect-ratio: 1 / 0.3; margin-top: 5rem;background-color: white;font-size: 3rem;}
+
+#index .main .tableBox {width: 100%;border: 1px solid var(--point-color);border-radius: 10px; aspect-ratio: 1 / 0.8; margin-top: 5rem;background-color: white;overflow-y: auto;}
+#index .main .table {width: 100%;}
+#index .main .table thead { width: 100%; border-bottom: 1px solid var(--point-color);    background-color: #F27521;}
+#index .main .table thead > tr {width: 100%;height: 50px;}
+#index .main .table thead > tr > th{width: 50%;text-align: center; vertical-align: middle;font-size: 3rem;color: #FFF;}
+#index .main .table tbody { width: 100%;}
+#index .main .table tbody  tr {width: 100%;height: 40px;}
+#index .main .table tbody  tr  td {width: 50%; text-align: center; vertical-align: middle; font-size: 3rem;}
+
+#index .main .btnBox .btn1:active {
+    background-color: #F27521; /* 클릭 시 색상 변화 */
+    color: #FFF;
+}
+#index .wrap .main .date .calendar-wrap .calendar-middle-wrap {width: 100%;}
+
+#index .main .btnBox2 { width: 100%; margin-top: 5rem; justify-content: center;display: flex;}
+#index .main .btnBox2 .legBtn { border: 1px solid var(--point-color);border-radius: 10px; width: 35rem; aspect-ratio: 1 / 0.15;background-color: white;font-size: 3rem;}
+
+#index .main .btnBox2 .legBtn:active {
+    background-color: #F27521; /* 클릭 시 색상 변화 */
+    color: #FFF;
+}
+
+#index .main .noData{display: flex; justify-content: center;align-items: center;font-size: 3rem;color: red;}

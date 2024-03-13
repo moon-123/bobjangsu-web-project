@@ -1,0 +1,57 @@
+/* body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+} */
+
+#timeClick, #timeTable {
+    display: flex;
+    align-items: center;
+}
+
+#timeTable {
+    display: none;
+}
+
+#hours, #mins {
+    width: 50%;
+    height: 400px;
+    overflow-y: scroll;
+    position: relative;
+    transition: overflow-y 0.3s ease;
+}
+
+.option {
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    padding: 10px;
+}
+.option + .option{margin-top: 10px;}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+.option.clicked {
+    background-color: #3498db;
+    color: #fff;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

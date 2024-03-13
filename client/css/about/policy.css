@@ -1,0 +1,14 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+.main .policyList {width: 100%;display: flex;justify-content: center;border-bottom: 1px solid var(--point-color);}
+.main .policyList .policyBtn {width: 40%;aspect-ratio: 1 / 0.6; font-size: 3rem;text-align: center;color: var(--point-color);display: flex;justify-content: center;align-items: center;}
+
+.contentBox {overflow-y: auto;width: 100%; aspect-ratio: 1 / 1.4;border: 1px solid var(--point-color);font-size: 3.2rem;margin-top: 3rem;border-radius: 10px; padding: 1.5rem; line-height: 1.3; background-color: white;}
+
+#use, #userInfoUse{display: none;}
+
+#app {background-color: #F27521;color: white;}
+
+#index .content a { color: #F27521;}
+

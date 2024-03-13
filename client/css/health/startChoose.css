@@ -1,0 +1,28 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+/* 360 x 640 */
+
+/* 
+    변경 가능성 
+    header height
+    plus font size
+    plus width
+    logo width
+    footer
+*/
+
+
+/* 전체 페이지 */
+#index .wrap { width: 100%; height: 100%; max-width: 768px; margin: 0 auto; }
+
+/* #index .main { justify-content: space-between; padding: 1rem 1.125rem; box-sizing: border-box;} */
+
+
+/* 메뉴 */
+/* li를 정렬하기 위해 flex, space-between, 각 버튼 간격 14px */
+#index .main ul { width: 100%; height: 100%; display: flex; flex-flow: row wrap; justify-content: space-between;}
+
+/* 버튼 사이 간격 0.4rem 유지하는 calc, 0.775:1 비율 유지 */
+/* width: calc(50% - 0.4rem);;*/
+#index .main li { width: 100%; background-color: rgb(240, 141, 20); border-radius: 10px; aspect-ratio: 1.6 / 1; margin-bottom: 14px;}

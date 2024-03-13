@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>main</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../css/main.css">
+
+        <!-- js -->
+        <script defer src="../js/index.js"></script>
+        <script src="../js/main/main.js"></script>
+    </head>
+   
+
+    <body id="index">
+        <div class="wrap">
+            <div class="noma">
+                <!-- main 로고헤더 -->
+                <header class="header">
+                    <div class="header-btn">
+                        <button type="button" class="plus" id="plus">더보기</button>
+                    </div>
+
+                    <div class="header-logo">
+                        <img src="../images/IMG_0156-1.png" alt="밥장수 로고">
+                    </div>
+                </header>
+                <!--메인 페이지 메뉴-->
+                <main class="main">
+                    <ul class="main-wrap1">
+                        <li>
+                            <a href="#" class="main-btn be-block" onclick="fetchMealData()">
+                                <span class="main-text">오늘의<br>식단</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recipe/recipe.html" class="main-btn">
+                                <span class="main-text">요리책</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-wrap2">
+                        <li>
+                            <a href="./ingredient/choose.html" class="main-btn">
+                                <span class="main-text">식재료</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./health/startChoose.html" class="main-btn be-block">
+                                <span class="main-text">내 건강<br>등록/보기</span>
+                            </a>
+                        </li>
+                    </ul>
+                </main>
+            </div>
+            <!-- included footer  -->
+            <footer class="footer-main">
+                <div>
+                <p>E-mail : junyealim@gmail.com</p> 
+                <p> © 2023 ABC Company. All rights reserved.</p> 
+                </div>
+            </footer>
+            <!-- sidebar(오류때문에 include 하면 안됨) -->
+            <div class="side-bar">
+                <div class="side-bg" onclick="closeSidebar()"></div>
+                <div class="inner-side">
+                    <div class="header">
+                        <button type="button" class="close">
+                            닫기
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <p id="myname"></p>
+                        </li>
+                        <li>
+                            <a href="./login.html" id="loginButton">
+                                <div class="nm">
+                                    <p>로그인 </p><img src="../images/user.png" alt="user">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../html/about/myinformation.html" id="mypageButton">
+                                <div class="nm">
+                                    <p>내 정보 </p><img src="../images/user.png" alt="user">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="mealButton" onclick="fetchMealData()">
+                                <div class="nm">
+                                    <p>식단</p><img src="../images/foodTray.png" alt="식단">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../html/recipe/recipe.html" id="recipeButton">
+                                <div class="nm">
+                                    <p>요리책 </p><img src="../images/recipy.png" alt="레시피">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../html/ingredient/choose.html" id="ingredientBt">
+                                <div class="nm">
+                                    <p>식재료 </p><img src="../images/free-icon-food.png" alt="식재료">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../html/health/startChoose.html" id="healthButton">
+                                <div class="nm">
+                                    <p>내 건강 등록 </p><img src="../images/health.png" alt="건강">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="logoutButton">
+                                <p>로그아웃</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+/* 추가한 부분!! */
+/* 버튼 설명 */
+#title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#title p {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 메뉴 */
+/* li를 정렬하기 위해 flex, space-between, 각 버튼 간격 14px */
+#choose .main ul { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between; 
+    margin-bottom: 1.5rem;;
+}
+
+/* 버튼 사이 간격 0.4rem 유지하는 calc, 0.775:1 비율 유지 */
+#choose .main li { 
+    width: calc(50% - 0.4rem); 
+    aspect-ratio: 1 / 0.8; 
+    background-color: var(--point-color); 
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out; /* 추가된 부분: 배경색 변화에 트랜지션 효과 */
+}
+
+/* display:flex는 버튼 텍스트 중앙으로 보내기 위함 */
+#choose .main .main-btn { 
+    flex-direction: column;
+}
+
+/* 각 버튼 아이콘 */
+#choose .main .main-btn .icon img {
+    width: 8rem;
+}
+
+#choose .main .main-btn img #brain {
+    width: 10rem;
+}
+
+/* 버튼 hover 시 배경,글씨색 변경 */
+#choose .main li:hover .main-btn {
+    background-color: #F27521; /* 추가된 부분: hover 시 배경색 변경 */
+}
+#choose .main li:hover .main-text {
+    color: white; /* hover 시 글자색 변경 */
+}

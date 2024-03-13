@@ -1,0 +1,118 @@
+/* body 아래 전체 화면 */
+.wrap { position: relative; width: 100%; min-height: 100vh; margin: 0 auto; max-width: 768px; }
+
+/* header, sidebar header */
+.header,
+.side-bar .header { width: 100%; height: 7.6875rem; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; background-color: var(--bg-color); padding:8.5rem var(--side-margin) 2.5rem; }
+.header-logo img { width: 15rem; }
+
+/* plus, close button */
+.header .plus,
+.side-bar .header .close { width: 15rem; flex-shrink: 0; border-radius: 15px; border: 0px; background: var(--point-color); color: #FFF; font-size: 3rem; padding: 1rem 0; }
+
+/* main 틀, 버튼, 버튼텍스트, 액티브효과 */
+.main { display: flex; flex-wrap: wrap; padding: var(--ud-margin) var(--side-margin); box-sizing: border-box; }
+.main .main-btn { width: 100%; height: 100%; flex-shrink: 0; border-radius: 10px; background: #FFF; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); display: flex; justify-content: center; align-items: center; }
+.main .main-text { display: inline; color: var(--point-color); text-align: center; font-size: 4rem; font-style: normal; font-weight: 400; line-height: normal; }
+.main .main-btn:active { background-color: var(--point-color); }
+.main .main-btn:active .main-text { color: #FFF; }
+
+/* 푸터 */
+.footer-main { position: sticky; bottom: 0; max-width: 768px; width: 100%; background-color: var(--point-color); padding: var(--ud-margin) var(--side-margin); box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); }
+.footer-main p { color: #fff; text-align: center; }
+
+.footer { position: sticky; bottom: 0; max-width: 768px; width: 100%; background-color: var(--point-color); display: flex; justify-content: space-between; padding: var(--ud-margin) var(--side-margin); box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); }
+.footer a { color: #fff; text-align: center; text-decoration: none; }
+.footer .footer-btn img { margin-top: 1rem; width: 9rem; }
+
+/* 사이드바 */
+.side-bar { position: fixed; top: 0px; width: 0px; height: 100vh; display: none; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+.side-bar .side-bg{background: #0008; width: 100%; height: 100%;}
+.side-bar .inner-side{width: 70%; background: var(--bg-color); position: fixed; left: 0; top: 0; height: 100vh; overflow: scroll;}
+.side-bar a { display: block; width: 100%; padding: 5% 0; }
+.side-bar ul li:first-child { background-color: var(--bg-color);}
+.side-bar ul li:last-child a {background-color: var(--point-color);}
+.side-bar ul li:last-child a p {color: white;}
+.side-bar ul li { display: flex; justify-content: center; align-items: center; text-align: center; cursor: pointer; border-bottom: 2px solid var(--point-color); z-index: 100; background-color: white;}
+.side-bar ul li img {width: 5rem;}
+.side-bar ul p { font-size: 2.4rem; margin-right: 1.5rem;}
+.side-bar #nickname {font-weight: bold;}
+.side-bar #myname {margin: 3rem auto 4rem;}
+.side-bar ul li a .nm {
+    display: flex; align-items: center; justify-content: center;
+}
+
+.side-bar #loginButton {
+    background-color: var(--point-color);
+}
+
+.side-bar #loginButton p {
+    color: white;
+}
+
+#display {
+    display: none;
+}
+
+
+
+/* 사이드바 애니메이션 */
+.fadeIn { display: block !important; animation: fadeIn 0.3s forwards !important; }
+.fadeOut { animation: fadeOut 0.3s forwards !important; }
+
+/* 폼, 인풋텍스트 */
+.form-group label { flex-basis: 30%; font-size: 2.5rem; }
+.form-group { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
+input { padding: 2.15rem 0; flex-grow: 1; border: 1px solid #FF8A00; border-radius: 20px; text-align: center; }
+.main form { width: 70%; margin: 5rem auto 0; }
+
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+
+/* 공유 사이드바 애니메이션 */
+@keyframes fadeIn {
+    0%{
+        width: var(--side-bar-width);
+    }
+    100%{
+        opacity: 1;
+        width: var(--side-bar-width);
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+        width: 0px;
+    }
+    100%{
+        opacity: 1;
+        width: 0px;
+        display: none;
+    }
+}
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+
+
+/* 공유 반응형 */
+/* 나중에 규격 맞춰야함 -> 거의 맞춤 */
+@media screen and (max-width:312px) {
+    html, body{font-size: 40%;}
+}
+@media screen and (min-width:312px) and (max-width:420px){
+    html, body{font-size: 50%;}
+}
+@media screen and (min-width:420px) and (max-width:512px){
+    html, body{font-size: 60%;}
+}
+@media screen and (min-width:512px) and (max-width:768px){
+    html, body{font-size: 70%;}
+}
+@media screen and (min-width:768px){
+    html, body{font-size: 80%;}
+}
+
+.noma { min-height: 100vh; }

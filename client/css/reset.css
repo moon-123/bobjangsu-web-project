@@ -1,0 +1,88 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+   작성할 페이지 css에 import 할 것
+*/
+:root {
+	--point-color: #F27521;
+	--heavy-point: #F86F03;
+	--bg-color: #FFF6F4;
+	--blue-color: #525FE1;
+	--black-color: #333333;
+	--real-white: #FFFFFF;
+	--dark-gray:#666666;
+	--dark-gray-text:#707070;
+	--real_gray:#919191;
+	--light-gray: #DEDEDE;
+	--gray-bg:#f8f8f8;
+	--side-bar-width: 100%;
+    --web-side-bar-width: 300px;
+	--side-margin: 2.25rem;
+	--ud-margin: 1rem;
+  }
+  
+/* 폰트 */
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrap {background-color: var(--bg-color);}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, button, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "KCCChassam";
+	color: var(--black-color);
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, a {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a { text-decoration: none; }
+
+p { display: inline-block; }
+
+input[type="radio"]{
+    display: none;
+}

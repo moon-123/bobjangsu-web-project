@@ -1,0 +1,40 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+
+
+/* 메뉴 */
+/* li를 정렬하기 위해 flex, space-between, 각 버튼 간격 14px */
+#myInfo .main .main-wrap { width: 100%; height: 100%; margin-bottom: 1.5rem; padding-top: 10rem;}
+
+/* 버튼 사이 간격 0.4rem 유지하는 calc, 0.775:1 비율 유지 */
+#myInfo .main .main-wrap li {display: block; width: 100%; border-radius: 10px; margin-bottom: 20px; font-size: 3rem; padding: 1rem;}
+
+#myInfo .main .main-wrap li .a { display: flex; justify-content: space-between; align-items: center;}
+
+#myInfo .main .main-wrap li .a label { width: 30%; padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+#myInfo .main .main-wrap li .b { margin-top: 1rem; border: 1px solid #FF8A00; border-radius: 1rem; background-color: white;}
+
+#myInfo .main .main-wrap li .a span {margin: 1rem 0; border-radius: 20px; padding-left: 1rem; padding-top: 2rem; border: 1px solid #FF8A00; width: 60%; font-size: 2rem;  }
+
+#myInfo .main .main-wrap li #allergy { width: 100%; padding-top: 1.5rem; padding-bottom: 1.5rem; font-size: 2.5rem; background-color: white;}
+
+#myInfo .main .main-wrap li .a input {margin-right: 10rem; margin: 1rem; width: 100%; font-size: 2.5rem;}
+
+#myInfo .main .main-wrap li .b { padding: 1rem 1.5rem;}
+
+#myInfo .main .main-wrap li .b p { font-size: 2rem; }
+
+#myInfo .main .main-wrap li .b input {  margin-left: 1.5rem; margin-top: 2rem; margin-bottom: 2rem; width: 2rem;}
+ 
+input::placeholder {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    color: rgb(177, 177, 177);
+}
+
+
+#myInfo .main .infochange { width: 100%; margin-bottom: 3rem;}
+
+#myInfo .a .c { width: 20%; text-align: center;}

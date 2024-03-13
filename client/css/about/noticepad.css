@@ -1,0 +1,119 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+.main { padding: 0;}
+
+
+/* 검색, 메뉴, 알림 부분 */
+#main-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#btnList {
+    width: 100%;
+    text-align: center;
+}
+
+#btnBox {
+    margin: 0 auto;
+    width: 100%;
+}
+
+button {
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: white;
+    color: #F27521;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #F27521;
+    margin-left: 0.5rem;
+    width: 5.5rem
+}
+
+button:hover {
+    background-color: #D95F12; /* Darker shade on hover */
+}
+
+.current-page {
+    background-color: #F27521; /* Different color for the current page */
+    color: white;
+}
+
+#info {
+    font-weight: bold;
+    display: block;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+/* 데이터 리스트 뜨는 곳 */
+.noticePad {border: 1px solid #F27521;border-radius: 10px; margin-bottom: 2rem; background-color: white; width: 100%; height: auto;}
+
+#list {
+    width: calc(90% - 0.4rem);
+    aspect-ratio: 0.75 / 0.9;
+    overflow: auto;
+    font-size: 3rem;
+    list-style: none;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+#list li {
+    padding: 1.5rem;
+    margin: 0;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#list li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+/* 번갈아가며 다른 배경 색상 적용 */
+#list li:first-child {
+    background-color: #fff6d4;
+    font-size: 4rem;
+}
+
+#index #list li:nth-child(2) {
+    height: 50%;
+}
+
+#index #list li:nth-child(3) {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    border-top: 1px solid gray;
+    border-radius: 0%;
+}
+
+/* 클릭한 항목 강조 스타일 */
+#list li.clicked {
+    background-color: #F27521;
+    color: white;
+}
+
+#healthInfo {
+    width: calc(90% - 0.4rem);
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+}

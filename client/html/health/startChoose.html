@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건강등록/보기</title>
+    <link rel="stylesheet" href="../../css/health/startChoose.css">
+    <script defer src="../../js/index.js"></script>
+    <script src="../../js/main/sub.js"></script>
+    
+</head>
+<body id="index">
+    <div class="wrap">
+        <div class="noma">
+            <header class="header">
+                <div class="header-btn">
+                    <button type="button" class="plus" id="plus">더보기</button>
+                </div>
+                <div class="header-logo">
+                    <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                </div>
+            </header>
+            <div class="main">
+                <ul>
+                    <li>                
+                        <a href="./createChoose.html" class="main-btn">
+                            <div class="main-text">건강 등록</div>
+                        </a>
+                    </li>
+                    <li>                
+                        <a href="./selectChoose.html" class="main-btn">
+                            <div class="main-text">건강 보기</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+        <div class="side-bar">
+            <div class="side-bg" onclick="closeSidebar()"></div>
+            <div class="inner-side">
+                <div class="header">
+                    <button type="button" class="close">
+                        닫기
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" onclick="changePage()">
+                            <p id="myname"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/about/myinformation.html" id="mypageButton">
+                            <div class="nm">
+                                <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="mealButton" onclick="fetchMealData()">
+                            <div class="nm">
+                                <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/recipe/recipe.html" id="recipeButton">
+                            <div class="nm">
+                                <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/ingredient/choose.html" id="ingredientBt">
+                            <div class="nm">
+                                <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/health/startChoose.html" id="healthButton">
+                            <div class="nm">
+                                <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <p>로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/health/createChoose.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 식단</title>
+    <link rel="stylesheet" href="../../css/meal/meal.css">
+    <script defer type="module" src="../../js/meal/mealdetail.js"></script>
+    <script defer type="module" src="../../js/meal/mealcalc.js"></script>
+    <script defer type="module" src="../../js/meal/meal.js"></script>
+    <script defer src="../../js/index.js"></script>
+
+</head>
+
+<body id="meal">
+    <div class="wrap">
+        <div class="noma">
+        <!-- main 로고헤더 -->
+        <header class="header">
+            <div class="header-btn">
+                <button type="button" class="plus">더보기</button>
+            </div>
+
+            <div class="header-logo">
+                <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+            </div>
+        </header>
+        <!-- 헤더 로고 및 메뉴 끝 -->
+
+        <div class="main">
+            <h2 class="text">오늘의 식단</h2>
+            <div class="title">
+                <div class="semi-title">
+                    <button type="button" id="morning" class="main-btn"> <span class="main-text">아침</span></button>
+                </div>
+                <div class="semi-title">
+                    <button type="button" id="lunch" class="main-btn"> <span class="main-text">점심</span></button>
+                </div>
+                <div class="semi-title">
+                    <button type="button" id="dinner" class="main-btn"> <span class="main-text">저녁</span></button>
+                </div>
+            </div>
+
+            <p class="ex-text">*알레르기 요소가 제외된 식단입니다</p>
+
+            <div id="loading"></div>
+            <div id="menulist" class="menulist">
+                <p class="menu-text"><밥></p>
+                <div id="rice" class="menu"></div>
+                <p class="menu-text"><국></p>
+                <div id="soup" class="menu"></div>
+                <p class="menu-text"><반찬1></p>
+                <div id="main1" class="menu"></div>
+                <p class="menu-text"><반찬2></p>
+                <div id="main2" class="menu"></div>
+            </div>
+
+            <div class="txt">탄수화물 <span id="catePer"></span></div>
+            <div id="cateper" class="per">
+                <span></span>
+                <div class="base"></div>
+            </div>
+
+            <div class="txt">지방 <span id="catePer1"></span></div>
+            <div id="cateper1" class="per">
+                <span></span>
+                <div class="base"></div>
+            </div>
+
+            <div class="txt">단백질 <span id="catePer2"></span></div>
+            <div id="cateper2" class="per">
+                <span></span>
+                <div class="base"></div>
+            </div>
+
+            <div class="txt">칼로리 <span id="catePer3"></span></div>
+            <div id="cateper3" class="per">
+                <span></span>
+                <div class="base"></div>
+            </div>
+
+            <div id="button" class="recipe-btn"><button type="button" id="pagemove" class="main-btn"><span
+                        class="main-text">레시피 보기</span></button></div>
+        </div>
+    </div>
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+
+        <div class="side-bar">
+            <div class="side-bg" onclick="closeSidebar()"></div>
+            <div class="inner-side">
+                <div class="header">
+                    <button type="button" class="close">
+                        닫기
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" onclick="changePage()">
+                            <p id="myname"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/about/myinformation.html" id="mypageButton">
+                            <div class="nm">
+                                <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="mealButton">
+                            <div class="nm">
+                                <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/recipe/recipe.html" id="recipeButton">
+                            <div class="nm">
+                                <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/ingredient/choose.html" id="ingredientBt">
+                            <div class="nm">
+                                <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/health/startChoose.html" id="healthButton">
+                            <div class="nm">
+                                <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <p>로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

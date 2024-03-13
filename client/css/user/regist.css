@@ -1,0 +1,125 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+#regist .main form{
+  width: 100%;
+}
+
+#regist #title {
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#regist .form-group .radio-wrap label { width: 100%; flex-basis: unset; display: block; box-sizing: border-box; }
+#regist .form-group .radio-wrap div { width: 100%; }
+#regist .form-group .radio-wrap div + div { margin-left: 10px; }
+
+#regist .form-group + ul { width: 70%; margin: 1rem auto 4rem; }
+#regist .form-group + ul + div + ul li{ margin-bottom: 6rem; }
+
+/* input box */
+#regist input { 
+  width: 70%;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+
+#regist .phone-number {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+#regist .phone-number input[type='text'] + input[type='text']{margin-left: 5px;}
+
+#regist .gender-selection,
+#regist .birthday-selection{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#regist .gender-selection .radio-wrap,
+#regist .birthday-selection .radio-wrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#regist .gender-btn,
+#regist .birthday-btn {
+  padding: 2.5rem 1rem;
+  border: 1px solid #FF8A00;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #FFF;
+  text-align: center;
+}
+
+#regist .gender-selection input[type="radio"]:checked + label,
+#regist .birthday-selection input[type="radio"]:checked + label {
+  background-color: #FF8A00;
+  color: white;
+}
+
+#regist .date-selection {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: block;
+}
+
+
+#regist .regist-form ul li {
+  margin-bottom: 5rem;
+}
+
+#regist .form-group .anne p,
+#regist .withText p { color: #FF8A00; font-size: 1.7rem; line-height: 1.5; }
+#regist .withText { display: flex; flex-wrap: wrap; }
+#regist .withText p { margin-top: 2rem; width: 100%;}
+
+/* 달력 부분  */
+/* width: 99px; height: 60px; */
+/* width: 211px; height: 60px; */
+#regist .wrap .main .date { width: 70%;}
+#regist .wrap .main .date .calendar-wrap .calendar-middle-wrap {width: 100%;}
+/* #regist .wrap .main .date .calendar-wrap .date-wrap {display: flex;align-items: center; justify-content: space-between; padding: 0.7305rem;} */
+
+/* 확인 버튼 크게 늘리기 */
+#regist #calendar {
+    text-align: center;
+}
+
+#regist #okay {
+    font-size: 3rem; /* Adjust the font size as needed */
+    padding: 1rem 2rem; /* Adjust padding for height and width */
+    background-color: var(--point-color); /* Set the background color */
+    color: white; /* Set the text color */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+#regist #okay:hover {
+    background-color: #b24400; /* Change the background color on hover */
+}
+
+/* #regist .wrap .main .date .calendar-wrap .date-wrap .test {  } */
+
+#regist .calendar-wrap .date-wrap .test .checkInOutInfo {width: 100%; padding: 2.5rem 0; border: 1px solid var(--point-color); border-radius: 10px;background-color: white; font-size: 2.5rem;}
+
+#regist .selectBox { width: 70%; }
+#regist .form-control { width: 100%; font-size: 3rem; border-radius: 10px; border: 1px solid var(--point-color); padding: 1rem; font-family: 'KCCChassam'; color: black !important;}
+/* #regist #year,
+#regist #month { font-size: 3rem; } */
+
+#regist .daymonth {margin-top: 1rem; display: flex; justify-content: space-between;}
+
+#regist #day,
+#regist #month { width: 45%; }

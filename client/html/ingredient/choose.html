@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카테고리 - 식재료 부분</title>
+    <link rel="stylesheet" href="/css/ingredient/style1.css">
+    <script defer src="../../js/index.js"></script>
+    <script src="../../js/main/sub.js"></script>
+
+
+</head>
+
+<body id='choose'>
+    <div class="wrap">
+        <div class="noma">
+            <header class="header">
+                <div class="header-btn">
+                    <button type="button" class="plus">더보기</button>
+                </div>
+
+                <div class="header-logo">
+                    <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                </div>
+            </header>
+            <div id="title">
+                <p>식재료 영양성분을 확인하시려면</p>
+                <p>원하는 카테고리를 선택하세요</p>
+            </div>
+            <div class="main">
+                <ul class="main-wrap1">
+                    <li>
+                        <a href="#" class="main-btn" onclick="clickCategory('당뇨')">
+                            <div class="icon"><img src="../../images/혈당.png" alt="당뇨 아이콘" id="sugar"></div>
+                            <div class="main-text">당뇨</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="main-btn" onclick="clickCategory('다이어트')">
+                            <div class="icon"><img src="../../images/다이어트.png" alt="다이어트 아이콘"></div>
+                            <div class="main-text">다이어트</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main-wrap2">
+                    <li>
+                        <a href="#" class="main-btn" onclick="clickCategory('고혈압')">
+                            <div class="icon"><img src="../../images/혈압.png" alt="고혈압 아이콘"></div>
+                            <div class="main-text">고혈압</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="main-btn" onclick="clickCategory('골다공증')">
+                            <div class="icon"><img src="../../images/골다공증.png" alt="골다공증 아이콘"></div>
+                            <div class="main-text">골다공증</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main-wrap3">
+                    <li>
+                        <a href="#" class="main-btn" onclick="clickCategory('치매')">
+                            <div class="icon"><img src="../../images/치매.png" alt="치매 아이콘" id="brain"></div>
+                            <div class="main-text">치매</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="main-btn" onclick="clickCategory('전체')">
+                            <div class="icon"><img src="../../images/전체보기.png" alt="전체보기 아이콘"></div>
+                            <div class="main-text">전체보기</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+
+        <div class="side-bar">
+            <div class="side-bg" onclick="closeSidebar()"></div>
+            <div class="inner-side">
+                <div class="header">
+                    <button type="button" class="close">
+                        닫기
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <p id="myname"></p>
+                    </li>
+                    <li>
+                        <a href="../login.html" id="loginButton">
+                            <div class="nm">
+                                <p>로그인 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/about/myinformation.html" id="mypageButton">
+                            <div class="nm">
+                                <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="mealButton" onclick="fetchMealData()">
+                            <div class="nm">
+                                <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/recipe/recipe.html" id="recipeButton">
+                            <div class="nm">
+                                <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/ingredient/choose.html" id="ingredientBt">
+                            <div class="nm">
+                                <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/health/startChoose.html" id="healthButton">
+                            <div class="nm">
+                                <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <p>로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="/js/ingredient/data.js"></script>
+</body>
+
+</html>

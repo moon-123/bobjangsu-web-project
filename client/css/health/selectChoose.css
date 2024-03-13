@@ -1,0 +1,10 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+/* 메뉴 */
+/* li를 정렬하기 위해 flex, space-between, 각 버튼 간격 14px */
+#index .main ul { width: 100%; height: 100%; display: flex; flex-flow: row wrap; justify-content: space-between; margin-bottom: 1.5rem;}
+
+/* 버튼 사이 간격 0.4rem 유지하는 calc, 0.775:1 비율 유지 */
+/* 178.625 * 111.922 */
+#index .main li { width: 100%; aspect-ratio: 2.45 / 1; background-color: rgb(240, 141, 20); border-radius: 10px; margin-top: 1.5rem;}

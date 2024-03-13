@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 목록 조회</title>
+    <link rel="stylesheet" href="../../css/manager/user.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>사용자 목록</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchField" class="input-box" placeholder="검색어 입력 (아이디 또는 이름)">
+            <button onclick="searchUsers()" class="black-btn">검색</button>
+        </div>
+        <div class="actions">
+            <small style="color: red;">[키, 몸무게, 알러지, 활동량]이 "정보 없음"으로 나오면 수정이 불가능합니다.</small>
+            <button onclick="createUser()" class="point-btn">생성</button>
+            <button class="black-btn" onclick="updateUser()">수정</button>
+            <button class="black-btn" onclick="deleteUser()">삭제</button>
+        </div>
+        <div id="userList" class="user-list">
+            <!-- 사용자 목록이 여기에 표시됩니다 -->
+        </div>
+        <div id="pagination">
+            <!-- 페이지 번호 버튼이 들어갈 자리 -->
+        </div>
+    </div>
+    <script src="../../js/manager/user.js"></script>
+</body>
+</html>

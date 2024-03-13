@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-height: 100vh;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .home-logo {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.container .home-logo:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    color: white;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+/* 공지사항 목록 스타일링 */
+.notice {
+    padding: 10px;
+}
+
+.page-title h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+/* 검색 영역 스타일링 */
+#board-search .search-window {
+    padding: 15px 0;
+    background-color: #f9f7f9;
+    text-align: center;
+}
+
+#board-search .search-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+#board-search .search-wrap input {
+    width: 300px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+}
+
+#board-search .search-wrap button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 8px 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+}
+
+/* 테이블 스타일링 */
+.board-table {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.board-table th, .board-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.board-table th {
+    background-color: #f8f8f8;
+}
+
+.board-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.board-table .th-check {
+    width: 50px;
+}
+
+/* 페이지네이션 스타일링 */
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #e8e8e8;
+}
+
+/* 행동 버튼 스타일링 */
+.actions {
+    text-align: center;
+}
+
+.actions button {
+    margin: 0 10px;
+    padding: 8px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #373737;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>공지사항관리</title>
+    <link rel="stylesheet" href="../../css/manager/notice.css">
+</head>
+<body>
+    
+<section class="notice">
+    <div class="page-title">
+          <div class="container">
+              <h3>공지사항 관리</h3>
+          </div>
+      </div>
+      
+      <div id="board-search">
+          <div class="container">
+              <div class="search-window">
+                  <form action="">
+                      <div class="search-wrap">
+                          <label for="search" class="blind">공지사항 제목 검색</label>
+                          <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
+                          <button type="submit" class="btn btn-dark">검색</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+     
+    <!-- board list area -->
+      <div id="board-list">
+          <div class="container">
+              <table class="board-table">
+                <colgroup>
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 60%;">
+                    <col style="width: 20%;">
+                </colgroup>
+                  <thead>
+                  <tr>
+                      <th scope="col" class="th-num">번호</th>
+                      <th scope="col" class="th-check">선택</th>
+                      <th scope="col" class="th-title">제목</th>
+                      <th scope="col" class="th-date">등록일</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+              </table>
+              <div id="pagination">
+                <!-- 페이지 번호 버튼이 들어갈 자리 -->
+            </div>
+          </div>
+      </div>
+  
+    </section>
+    <!-- 수정 및 삭제 버튼 -->
+    <div class="actions">
+        <button onclick="createSelectedNotices()">등록</button>
+        <button onclick="updateSelectedNotices()">수정</button>
+        <button onclick="deleteSelectedNotices()">삭제</button>
+    </div>
+  <script src="../../js/manager/notice.js"></script>
+</body>
+</html>

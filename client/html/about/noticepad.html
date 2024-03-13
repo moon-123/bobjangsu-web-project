@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>main</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../../css/about/noticepad.css">
+
+        <!-- js -->
+        <script defer src="../../js/index.js"></script>
+        <script defer src="../../js/about/noticepad.js"></script>
+        <script src="../../js/main/sub.js"></script>
+
+    </head>
+    <body id="index">
+        <div class="wrap">
+            <div class="noma">
+                <!-- main 로고헤더 -->
+                <header class="header">
+                    <div class="header-btn">
+                        <button type="button" class="plus" id="plus">더보기</button>
+                    </div>
+
+                    <div class="header-logo">
+                        <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                    </div>
+                </header>
+                <!--메인 페이지 메뉴-->
+                <div class="main">
+                    <div id="main-wrap">
+                        <p id="info">[공지 사항]</p>
+                        <div id="list"></div>
+                    </div>
+                </div>
+                <div class="btnList" id="btnList">
+                    <div id="btnBox" class="btnBox"></div>
+                </div>
+            </div>
+            <!-- included footer  -->
+            <footer class="footer">
+                <a href="../index.html" class="footer-btn">
+                    <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+                </a>
+                <a href="./myinformation.html " class="footer-btn">
+                    <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+                </a>
+            </footer>
+            <!-- sidebar(오류때문에 include 하면 안됨) -->
+            <div class="side-bar">
+                <div class="side-bg" onclick="closeSidebar()"></div>
+                <div class="inner-side">
+                    <div class="header">
+                        <button type="button" class="close">
+                            닫기
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <p id="myname"></p>
+                        </li>
+                        <li>
+                            <a href="./login.html" id="loginButton">
+                                <div class="nm">
+                                    <p>로그인 </p><img src="../../images/user.png" alt="user">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../html/about/myinformation.html" id="mypageButton">
+                                <div class="nm">
+                                    <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="mealButton" onclick="fetchMealData()">
+                                <div class="nm">
+                                    <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../html/recipe/recipe.html">
+                                <div class="nm">
+                                    <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../html/ingredient/choose.html">
+                                <div class="nm">
+                                    <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../html/health/startChoose.html" id="healthButton">
+                                <div class="nm">
+                                    <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="logoutButton">
+                                <p>로그아웃</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

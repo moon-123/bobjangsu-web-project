@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자페이지</title>
+    <link rel="stylesheet" href="../../css/manager/managerIndex.css">
+    <link rel="stylesheet" href="../../css/manager/user.css">
+</head>
+<body>
+<svg style="display:none;">
+    <symbol id="users" viewBox="0 0 16 16">
+        <path d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0ZM8,15a7,7,0,0,1-5.19-2.32,2.71,2.71,0,0,1,1.7-1,13.11,13.11,0,0,0,1.29-.28,2.32,2.32,0,0,0,.94-.34,1.17,1.17,0,0,0-.27-.7h0A3.61,3.61,0,0,1,5.15,7.49,3.18,3.18,0,0,1,8,4.07a3.18,3.18,0,0,1,2.86,3.42,3.6,3.6,0,0,1-1.32,2.88h0a1.13,1.13,0,0,0-.27.69,2.68,2.68,0,0,0,.93.31,10.81,10.81,0,0,0,1.28.23,2.63,2.63,0,0,1,1.78,1A7,7,0,0,1,8,15Z" />
+    </symbol>
+    <symbol id="collapse" viewBox="0 0 16 16">
+        <polygon points="11.62 3.81 7.43 8 11.62 12.19 10.09 13.71 4.38 8 10.09 2.29 11.62 3.81" />
+    </symbol>
+</svg>
+
+<header class="page-header">
+  <nav>
+    <a aria-label="forecastr logo" class="logo">
+      <strong>밥장수<br>관리자 페이지</strong>
+    </a>
+    <div class="admin-profile">
+          <svg>
+            <use xlink:href="#users"></use>
+          </svg>
+          <span class="greeting">관리자</span>
+    </div>
+    <div>
+      <button class="point-btn">로그아웃</button>
+    </div>
+    <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
+      <svg width="20" height="20" aria-hidden="true">
+        <use xlink:href="#down"></use>
+      </svg>
+    </button>
+    <ul class="admin-menu">
+      <li class="menu-heading">
+        <!-- <h3>사용자 관리</h3> -->
+      </li>
+      <li>
+        <a href="javascript:void(0)" onclick="updateIframe('./user.html')">사용자 관리</a>
+        </a>
+      </li>
+      <li>
+
+    <li class="menu-heading">
+        <!-- <h3>공지사항관리</h3> -->
+        </li>
+        <li>
+        <a href="javascript:void(0)" onclick="updateIframe('./notice.html')">공지사항 관리</a>
+        </a>
+        </li>
+
+      <li class="menu-heading">
+        <!-- <h3>시스템관리</h3> -->
+      </li>
+      <li>
+        <a href="javascript:void(0)" onclick="updateIframe('./systeminfo.html')">시스템 모니터링</a>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="page-content">
+  <section class="grid">
+    <article class="iframe-container">
+      <iframe id="contentFrame" class="responsive-iframe" src="../index.html"></iframe>
+    </article>  
+  </section>
+</section>
+<script src="../../js/manager/managerIndex.js"></script>
+</body>
+</html>

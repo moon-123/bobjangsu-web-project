@@ -1,0 +1,104 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header {
+    display: block;
+}
+.page-header{padding: 60px 20px; background: #fff; box-shadow: 0 0 20px #0001;}
+.page-header .logo{font-size: 26px; margin-bottom: 20px;}
+.page-header .admin-profile{justify-content: left;}
+.page-header .admin-profile svg{margin-right: 10px !important;}
+.page-header .point-btn{width: 100%; max-width: unset;}
+
+
+.home-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 20px 0 40px;
+}
+.home-logo img{width: 90px; display: block;}
+
+h1 {
+    text-align: left;
+}
+.page-content{padding: 0px !important;}
+
+.home-logo:hover{
+    color: #555;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 검색 */
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.search-container button{margin-left: 5px;}
+.actions{margin-top: 30px; text-align: right;}
+.actions button{height: 30px; width: 60px;}
+.user-list {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.user-list th, .user-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.user-list th {
+    padding: 15px;
+    background-color: #F8F8F8;
+    color: #333;
+}
+
+.input-box{background: #fff; border: 1px solid #ddd; box-sizing: border-box; padding: 5px 10px; border-radius: 5px; height: 40px; width: 100%;}
+.point-btn{background: #F27521; padding: 5px 10px; box-sizing: border-box; color: #fff; border-radius: 5px; border: 1px solid #F27521; max-width: 120px; width: 100%; height: 40px;}
+
+.black-btn{background: #333; padding: 5px 10px; box-sizing: border-box; color: #fff; border-radius: 5px; border: 1px solid #333; max-width: 120px; width: 100%; height: 40px;}
+
+.gray-btn{background: #d3d3d3; padding: 5px 10px; box-sizing: border-box; color: #333; border-radius: 5px; border: 1px solid #d3d3d3; max-width: 120px; width: 100%; height: 40px;}
+
+.user-list tr:hover {background-color: #f5efec;}
+
+/* 체크박스 */
+.user-checkbox{appearance: none !important; border: 1px solid #ddd; border-radius: 5px; width: 24px; height: 24px; position: unset; left: 0px; position: relative;}
+.user-checkbox::after{content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 5px;}
+.user-checkbox:checked{border: 1px solid #F27521;}
+.user-checkbox:checked::after{background-color: #F27521; width: 70%; height: 70%;}
+
+.user-details-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.user-details-card p {
+    margin: 5px 0;
+}
+
+/* 페이지네이션 */
+#pagination{display: flex; justify-content: center;}
+#pagination button{width: 30px; height: 30px; border-radius: 5px; color: #999; background-color: #fff; box-sizing: border-box; border: 1px solid #f8f8f8; cursor: pointer;}
+#pagination button + button{margin-left: 5px;}
+#pagination button.active{color: #F27521; background: #fff; border-color: #F27521;}

@@ -1,0 +1,324 @@
+@import url('../reset.css');
+@import url('../share.css');
+
+/* 레시피 공통 */
+.sub-btn {
+    width: calc(35% - 0.2rem); 
+    padding: 1rem 0.4rem;
+    font-size: 1.5rem;
+    background-color: #F27521;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.searchInput {
+    text-align: center; 
+    font-size: 1.5rem; 
+    width: calc(70% - 0.2rem); 
+    height: 40%;
+    border-radius: 20px; border:2px solid rgb(44, 44, 44);
+    background-color: rgb(231,231,231);
+    margin-right: 2%;
+}
+
+.searchInput::placeholder {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* recipe */
+#recipe .main ul { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between; 
+    margin-bottom: 14px;
+}
+
+#recipe .main .liwid { 
+    width: calc(100% - 0.2rem); 
+    aspect-ratio: 1 / 0.40; 
+    background-color: rgb(240, 141, 20); 
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+} 
+
+#recipe .main li { 
+    width: calc(50% - 0.4rem); 
+    aspect-ratio: 0.775/1; 
+    background-color: rgb(240, 141, 20); 
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease-in-out;
+} 
+
+/* recipeDatil */
+.container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.controls-item {
+    display: inline-block;
+}
+.paginationjs-page a {
+    color: orange
+}
+
+#recipeOne .main-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0;
+}
+
+#recipeOne .main-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0;
+}
+
+#recipeDetail .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0;
+}
+
+#recipeDetail .main-wrap {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0;
+}
+
+#recipeDetail .search {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+#recipeDetail .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recipeDetail .searchInput {
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    border: 2px solid #F27521;
+    border-radius: 20px;
+    outline: none; /* Remove the default input outline */
+    transition: border-color 0.3s ease-in-out;
+}
+
+#recipeDetail .searchInput:focus {
+    border-color: #F27521; /* Change border color on focus */
+}
+
+#recipeDetail .info {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+/* 데이터 리스트 뜨는 곳 */
+#recipeDetail #recipeinput div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+#recipeDetail .list {
+    width: 100%;
+    aspect-ratio: 0.75 / 0.9;
+    border: 1px solid #F27521;
+    overflow: auto;
+    font-size: 3rem;
+    list-style: none;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: white;
+}
+
+/* #recipeDetail tbody {
+    width: 100%;
+}
+
+#recipeDetail .list {
+    width: 100%;
+    text-align: center;
+    padding: 0 3rem;
+    margin: 5px 0;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#recipeDetail .list td {
+    width: 100%;
+    text-align: center;
+    padding: 1.4rem;
+    margin: 5px 0;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+} */
+
+/* 번갈아가며 다른 배경 색상 적용 */
+#recipeDetail .list tr:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+#recipeDetail table {
+    width: 100%;
+}
+
+#data-container {
+    height: 100%;
+}
+
+#data-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+#recipeDetail #data-container li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* 번갈아가며 다른 배경 색상 적용 */
+#recipeDetail .list li:nth-child(even) {
+    background-color: var(--bg-color)
+}
+
+
+/* 클릭한 항목 강조 스타일 */
+#recipeDetail .list li.clicked {
+    background-color: #F27521;
+    color: white;
+}
+
+
+/* recipeOne */
+#recipeOne .title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 10px;
+}
+
+#recipeOne .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#recipeOne #img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+#recipeOne #info {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+/* 데이터 리스트 뜨는 곳 */
+#recipeOne .main-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0;
+}
+
+#recipeOne .list {
+    width: calc(100% - 0.4rem);
+    /* aspect-ratio: 0.75 / 1; */
+    overflow: auto;
+    font-size: 2.5rem;
+    list-style: none;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.list p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--point-color);
+    margin-bottom: 1rem;
+  }
+#recipeOne .list #img {
+    min-height: 100px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#recipeOne .list #ingre {
+    min-height: 100px;
+    width: 90%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#recipeOne .list #how {
+    min-height: 100px;
+    width: 90%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#recipeDetail .list li {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    margin: 5px 0;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-wrap { width: 70%; }
+
+
+#recipeOne td {
+padding: 1rem;
+}
+
+#recipeOne .main li {
+    padding: 1rem;
+    line-height: 1.4;
+}

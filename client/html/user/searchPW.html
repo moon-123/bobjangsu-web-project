@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밥장수 비밀번호 찾기 및 변경</title>
+    <link rel="stylesheet" href="../../css/user/searchPW.css">
+    <script defer src="../../js/index.js"></script>
+
+</head>
+
+<body id="searchPW">
+
+    <div class="wrap">
+        <div class="noma">
+            <!-- main 로고헤더 -->
+            <header class="header">
+                <div class="header-btn">
+                    <button type="button" class="plus">더보기</button>
+                </div>
+
+                <div class="header-logo">
+                    <img src="../../images/IMG_0156-1.png" alt="밥장수 로고">
+                </div>
+            </header>
+            <!-- 인증 폼 -->
+            <div class="main" id="display-flag1" style="display: block;">
+                <div class="page-name">
+                    <h2>비밀번호 찾기</h2>
+                </div>
+
+                <form id="searchPW-form" class="form" method="#">
+
+                    <div class="form-group">
+                        <label for="userid">아이디</label>
+                        <input type="text" id="userid" name="userid" maxlength="10" class="sptext" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="textphnumber" for="phnumber">휴대폰<br> &nbsp;번호</label>
+
+                        <input type="text" id="phnumber" name="phnumber" class="sptext" placeholder="- 제외하고 숫자만 입력" required>
+
+                        <button type="button" id="sendVerification" class="main-btn"> <span class="main-text">인증번호
+                                받기</span></button>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="textverificationCode" for="verificationCode">인증번호</label>
+                        <input type="text" id="verificationCode" name="verificationCode" maxlength="6" class="sptext" required>
+
+                        <span id="time" style="width: 30%; color: black; font-size: 40px;"></span>
+
+                        <button type="button" id="verifyCode" class="main-btn"> <span class="main-text">인증번호
+                                검증</span></button>
+                    </div>
+
+                    <li id="checkMessage" style="text-align: center; margin: 0 0 4rem; display: none;">
+                        <span style="font-size: 3rem;">인증되었습니다!</span>
+                    </li>
+
+                    <div class="form-group">
+                        <button type="submit" class="main-btn"> <span class="main-text">비밀번호 찾기</span></button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 비밀번호 변경 폼 (초기에 숨겨짐) -->
+
+            <div class="main" id="display-flag2" style="display: none;">
+                <div class="page-name">
+                    <h2>비밀번호 변경</h2>
+                </div>
+                    
+                <div class="change-password-container form">
+                    <form id="changePasswordForm">
+                        <div class="form-group">
+                            <label for="newPassword">새 비밀번호:</label>
+                            <input type="password" id="newPassword" name="newPassword" maxlength="4" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">비밀번호 확인:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" maxlength="4" required>
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="submit" class="main-btn"><span class="main-text">변경하기</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="../index.html" class="footer-btn">
+                <div class="my-text"><img src="../../images/IMG_0169-1.png" alt="홈버튼"></div>
+            </a>
+            <a href="#" class="footer-btn" onclick="history.back()">
+                <div class="my-text"><img src="../../images/Imported_Image-1.png" alt="뒤로가기" id="back"></div>
+            </a>
+        </footer>
+
+        <div class="side-bar">
+            <div class="side-bg" onclick="closeSidebar()"></div>
+            <div class="inner-side">
+                <div class="header">
+                    <button type="button" class="close">
+                        닫기
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" onclick="changePage()">
+                            <p id="myname"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/about/myinformation.html" id="mypageButton">
+                            <div class="nm">
+                                <p>내 정보 </p><img src="../../images/user.png" alt="user">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/meal/meal.html" id="mealButton">
+                            <div class="nm">
+                                <p>식단</p><img src="../../images/foodTray.png" alt="식단">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/recipe/recipe.html">
+                            <div class="nm">
+                                <p>요리책 </p><img src="../../images/recipy.png" alt="레시피">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/ingredient/choose.html">
+                            <div class="nm">
+                                <p>식재료 </p><img src="../../images/free-icon-food.png" alt="식재료">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../html/health/startChoose.html" id="healthButton">
+                            <div class="nm">
+                                <p>내 건강 등록 </p><img src="../../images/health.png" alt="건강">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <p>로그아웃</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/user/searchPW.js"></script>
+</body>
+
+</html>

@@ -58,7 +58,7 @@
 
 ## 🚀 Result
 ### 🎨 프론트 디자인 및 결과 PPT
-[밥장수 사용자 디자인 및 기능 PPT](https://github.com/sakongmyoungheun/test/files/14611508/KDT._._.pdf)
+[밥장수 사용자 디자인 및 기능 PPT](KDT프로젝트_발표자료_밥장수(제출용).pdf)
 
 ### 🖥️ 기능
 #### 사용자

@@ -1,5 +1,6 @@
 # 🍚 노인을 위한 식재료 및 식단 추천 어플리케이션
-<img width="100%" alt="image" src="https://github.com/sakongmyoungheun/test/assets/149550142/0be5d4f4-7924-4658-ae32-e3c8a84897a6">
+
+<img width="100%" alt="image" src="https://github.com/moon-123/bobjangsu-web-project/assets/59769304/e3cb8144-4823-4d0b-bcda-168b01ab1030">
 
 ##### 노인들의 체격에 따른 식단을 랜덤으로 추천해주는 어플
 ###### 인원 : 6명
@@ -33,8 +34,9 @@
 
 밥장수는 특정 질병이나 알러지에 대한 정보를 바탕으로 개인에게 이로운 식단을 제공하며 혈압, 혈당, 몸무게와 같은 노인들의 건강 상태를 모니터링하기 쉽게하여 편의를 제공합니다. 이를 통해 노인들의 삶의 질과 건강을 향상시키는데 기여할 수 있다고 생각합니다.
 
-<img width="100%" alt="image" src="https://github.com/sakongmyoungheun/test/assets/149550142/ba7efad7-75c1-4d4a-9040-4d3176aa9a8f">
-<img width="100%" alt="image" src="https://github.com/sakongmyoungheun/test/assets/149550142/3c76b951-bb46-4989-a86c-d4dff7433982">
+<img width="100%" alt="image" src="https://github.com/moon-123/bobjangsu-web-project/assets/59769304/e1f152a0-9ef6-436a-84e7-39b26f6066dc">
+
+<img width="100%" alt="image" src="(https://github.com/moon-123/bobjangsu-web-project/assets/59769304/72572bbf-4112-4739-bf83-784c380e5b26">
 
 
 ## ✏️ 사용한 공공데이터
@@ -49,10 +51,10 @@
 ###### - 기획, 서버구현, 프론트구현, PPT, 발표, 디자인, 서버배포
 
 ## 🌏 IA(Information Architecture)
-<img width="100%" alt="image" src="https://github.com/sakongmyoungheun/test/assets/149550142/bbeca95a-497e-4604-8327-21fd6e3c1e17">
+<img width="100%" alt="image" src="https://github.com/moon-123/bobjangsu-web-project/assets/59769304/b035e9a7-6166-4015-899b-664070ce3a4a">
 
 ## 🗓️ Work schedule
-<img width="100%" alt="image" src="https://github.com/sakongmyoungheun/test/assets/149550142/96bd99a9-6ff7-447b-b5e0-2a1351284d4c">
+<img width="100%" alt="image" src="https://github.com/moon-123/bobjangsu-web-project/assets/59769304/69714c3e-965e-477e-898d-2d67ba428719">
 
 ## 🚀 Result
 ### 🎨 프론트 디자인 및 결과 PPT
@@ -75,7 +77,7 @@
 3. 시스템 모니터링
 
 ### 활용방안 및 기대효과
-<img width="100%" alt="image" src="https://github.com/sakongmyoungheun/test/assets/149550142/952df35c-0493-465f-a02f-570aec24eb5e">
+<img width="100%" alt="image" src="https://github.com/moon-123/bobjangsu-web-project/assets/59769304/3711b89b-10dc-4162-83a4-1db69d284d96">
 
 ### 🚀 트러블슈팅
-<img width="100%" alt="image" src="https://github.com/sakongmyoungheun/test/assets/149550142/afd7edc6-a786-497c-b320-f7fa58f3c063">
+<img width="100%" alt="image" src="https://github.com/moon-123/bobjangsu-web-project/assets/59769304/3c5a6953-bd3d-437e-b716-91f038caee87">

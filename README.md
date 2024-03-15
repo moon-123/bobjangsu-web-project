@@ -36,7 +36,7 @@
 
 <img width="100%" alt="image" src="https://github.com/moon-123/bobjangsu-web-project/assets/59769304/e1f152a0-9ef6-436a-84e7-39b26f6066dc">
 
-<img width="100%" alt="image" src="(https://github.com/moon-123/bobjangsu-web-project/assets/59769304/72572bbf-4112-4739-bf83-784c380e5b26">
+<img width="100%" alt="image" src="https://github.com/moon-123/bobjangsu-web-project/assets/59769304/72572bbf-4112-4739-bf83-784c380e5b26">
 
 
 ## ✏️ 사용한 공공데이터
